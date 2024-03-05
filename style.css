@@ -1,56 +1,70 @@
 body {
     margin: 0;
-    background-color: #1f1f1f;
+    background-color: #282c34;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .name {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .timer {
-    padding: 30px 50px;
-    border: 2px solid #fff;
+    padding: 30px;
+    border: 2px solid #61dafb;
     color: #fff;
     font-size: 60px;
     background-color: #333;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    animation: pulse 1s infinite alternate;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 .btns {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 button {
     padding: 15px 30px;
     border-radius: 5px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-color: #61dafb;
     color: #fff;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #3a89c9;
 }
 
 .split_container {
     list-style: none;
     padding: 0;
     margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .split_container li {
-    background-color: #555;
+    background-color: #444;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.split_container li:hover {
+    background-color: #333;
 }
